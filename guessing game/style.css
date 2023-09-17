@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    overflow: hidden;
+    
+}
+
+.main{
+    padding: 32px 100px;
+    text-align: center;
+    width: 100%;
+    height:100%;
+    background-color: black;
+}
+
+h1{
+    font-size: 7vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: brown; */
+    color: transparent;
+    -webkit-text-stroke: crimson;
+    -webkit-text-stroke-width: 2px;
+    pointer-events: none;
+    opacity: 0;
+    animation:fade ease-in 1s infinite;
+    
+}
+@keyframes fade {
+    0%{
+opacity: 0;
+    }
+    100%{
+opacity: 1;
+    }
+}
+
+ .main p{
+    font-size: 3vw;
+padding: 25px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(168, 69, 153);
+    /* background-color: black; */
+}
+
+.box{
+    width: 550px;
+    height: 184px;
+    margin:0 auto;
+}
+
+input{
+    width: 374px;
+    height: 91px;
+    padding: 20px;
+    margin: 0px 0px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 59px;
+    border: none;
+    outline: none;
+}
+
+button{
+    border-radius: 10px 10px 0px 0px;
+    padding: 30px 121px;
+    font-size: 20px;
+    margin-left: -59px;
+    margin-top: -10px;
+    border: none;
+    background-color: aquamarine;
+    /* border-radius: 20px; */
+}
+h2{
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 30px;
+    text-align: center;
+    color: beige;
+}
+
+.result{
+    width: 500px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+@media(max-width:600px) {
+    .box{
+        width:100%;
+        height: 184px;
+    }
+    .element{
+      width: 100%;
+    }
+
+    h1{
+        font-size: 11vw;
+    }
+
+    .main p {
+        font-size: 10vw;
+        padding: 25px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(168, 69, 153);
+        /* background-color: black; */
+    }
+
+    button{
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .main{
+        width: 100%;
+        padding: 100px 10px;
+    }
+
+    p.result {
+        margin-top: 20px;
+        width:100%;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+
+    }
+}
